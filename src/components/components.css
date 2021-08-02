@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+
+
+ 
+.name{
+    margin-top: 250px;
+    padding: 0;
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 10px #1F51FF,
+    0 0 20px #1F51FF,
+    0 0 40px #1F51FF,
+    0 0 70px #1F51FF,
+    0 0 110px #1F51FF,
+    0 0 160px #1F51FF;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: sans-serif;
+    -webkit-box-reflect: below 5px linear-gradient(transparent,rgba(0, 0, 0, 0.247));
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.name-small{
+    
+        margin-top: 250px;
+        padding: 0;
+        position: relative;
+        top: 60%;
+        transform: translateY(-50%);
+        width: 100%;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0 0 10px #1F51FF,
+        0 0 20px #1F51FF,
+        0 0 40px #1F51FF,
+        0 0 70px #1F51FF,
+        0 0 110px #1F51FF,
+        0 0 160px #1F51FF;
+        text-align: center;
+        letter-spacing: 5px;
+        font-family: sans-serif;
+        line-height: 1.0em;
+        outline: none;
+        animation: animate 5s linear ;
+        font-family: 'Kaushan Script', cursive;
+        -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+}
+
+ 
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgb(24, 24, 24);
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #1F51FF,
+        0 0 20px #1F51FF,
+        0 0 40px #1F51FF,
+        0 0 70px #1F51FF,
+        0 0 110px #1F51FF,
+        0 0 160px #1F51FF;
+
+    }
+}
+
+
+
+.info{
+    color: #fff;
+    --interval: 1s;
+  display: block;
+  text-shadow: 
+  0 0 10px  #1F51FF,
+  0 0 20px #1F51FF,
+  0 0 40px #1F51FF,
+  0 0 70px #1F51FF,
+  0 0 110px #1F51FF,
+  0 0 160px #1F51FF;
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  
+}
+
+@keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+ 
+.home a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 35px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    text-shadow: 
+        0 0 10px  #1F51FF,
+        0 0 20px #1F51FF,
+        0 0 40px #1F51FF,
+        0 0 70px #1F51FF,
+        0 0 110px #1F51FF,
+        0 0 160px #1F51FF;
+   
+}
+
+.home a:hover{
+    background: #1F51FF;
+    color: #050801;
+    /*box-shadow: 0 0 5px #1F51FF,
+                0 0 25px #1F51FF,
+                0 0 50px #1F51FF,
+                0 0 200px #1F51FF;*/
+
+                box-shadow:
+                inset 0 0 40px rgb(6, 247, 235),
+                inset 20px 0 80px #1F51FF,
+                inset -20px 0 80px #1F51FF,
+                inset 20px 0 300px #1F51FF,
+                inset -20px 0 300px #1F51FF,
+                0 0 30px rgb(6, 247, 235),
+                -10px 0 80px #1F51FF,
+                10px 0 80px #1F51FF;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.home a span{
+    position: absolute;
+    display: block;
+}
+.home a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#1F51FF);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.home a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#1F51FF);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.home a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#1F51FF);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.home a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#1F51FF);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+/***************************experience*************************************/
+
+
+  
+  .container-ex .card{
+      background: rgba(0, 0, 0, 0);
+  }
+  
+  .container-ex .card .face{
+    
+    height: 200px;
+    transition:.4s;
+    
+  }
+  
+  .container-ex .card .face.face1{
+    height: 250px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    
+    
+  }
+  
+  .container-ex .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #1F51FF,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #1F51FF,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #1F51FF;
+     
+  }
+  
+  
+  .container-ex .card .face.face1 .content{
+    opacity: .4;
+    transition:  0.5s;
+    text-align: center;
+    
+     
+    
+    
+   
+  
+  }
+  
+  .container-ex .card:hover .face.face1 .content{
+    opacity: 1;
+   
+  }
+  
+  .container-ex .card .face.face1 .content h3{
+    font-size: 1.7em;
+    color: #fff;
+    
+    text-align: center;
+    
+  
+  }
+  
+  .container-ex .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .container-ex .card .face.face2 {
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-left: 10px;
+     padding-right: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+    
+  }
+
+
+  .container-ex .card:hover .face.face2{
+      transform: translateY(0);
+  
+  
+  }
+    .experience{
+        color: #fff;
+        text-shadow: 
+        0 0 10px  #1F51FF,
+        0 0 20px #1F51FF,
+        0 0 40px #1F51FF,
+        0 0 70px #1F51FF,
+        0 0 110px #1F51FF,
+        0 0 160px #1F51FF;  }  
+  
+  /************************Skills********************/
+
+  .box{
+      position: relative;
+      display: flex;
+      justify-content: justify;
+      align-items: center;
+      background: #000000;
+      margin:40px;
+      text-shadow: 0 0 10px  #1F51FF,
+      0 0 20px #1F51FF,
+      0 0 40px #1F51FF,
+      0 0 70px #1F51FF,
+      0 0 110px #1F51FF,
+      0 0 160px #1F51FF; 
+      
+  }
+
+  .box:before{
+      content: '';
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      right: -2px;
+      bottom:-2px;
+      background: #fff;
+      z-index: -1;
+
+  }
+  .box:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    right: -2px;
+    bottom:-2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+    
+}
+    .box:nth-child(1):before,
+    .box:nth-child(1):after{
+
+        background: linear-gradient(235deg, #f0f,#010615,#1F51FF);
+    }
+  .box .glass{
+      position:absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        display:block;
+        background: rgba(255, 255, 255, 0.103);
+  }
+
+  .box .Skill-content{
+      padding: 20px;
+      color: #fff;
+  }
+  .box .Skill-content ul li{
+        
+    padding: 10px;
+    color: #fff;
+    
+}
+.padding-box{
+   padding-bottom: 40px;
+}
+
+/********************projects**********/
+
+.body-pr{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.projects{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.projects .Projects-box{
+    position: relative;
+    display: flex;
+    width: 320px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+
+}
+
+.projects .Projects-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.projects .Projects-box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(40px);
+    transition: 0.5s;
+}
+
+.projects .Projects-box:hover:before, .projects .Projects-box:hover:after{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.projects .Projects-box:nth-child(1):before, .projects .Projects-box:nth-child(1):after{
+    background: linear-gradient(315deg,#1F51FF,#f0f);
+}
+
+.projects .Projects-box span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.projects .Projects-box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: anime 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.projects .Projects-box:hover span::before{
+    top:-50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity:1;
+
+}
+.projects .Projects-box span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: anime 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    animation-delay: -1s;
+}
+
+.projects .Projects-box:hover span::after{
+    bottom:-50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity:1;
+
+}
+
+
+@keyframes anime{
+    0%,100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.projects .Projects-box .projects-content{
+   position: relative;
+   left: 0;
+   padding: 20px 40px;
+   background: rgba(255,255,255,0.05);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   border-radius: 8px;
+   backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+}
+
+.projects .Projects-box:hover .projects-content{
+    left: -25px;
+    padding: 60px 40px;
+}
+
+.pr{
+    font-weight: 700;
+}
+ a{
+   
+    color: #fff;
+    
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 10px  #f0f,
+        0 0 20px #f0f,
+        0 0 40px rgb(174, 0, 255);
+}
+
+
+
+
