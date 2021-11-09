@@ -4,7 +4,7 @@ import "./components.css"
 function Skills(){
     return(
         <div>
-            <div className="container"> 
+            <div className="container">                 
                 <div className="row"> 
                 <h2 className="experience mb-3 text-center">SKILLS</h2>  
                     <div className="col">    

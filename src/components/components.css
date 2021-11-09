@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 
  
@@ -90,6 +90,8 @@
   will-change: filter, color;
   filter: saturate(60%);
   animation: flicker steps(100) var(--interval) 1s infinite;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-weight: 600;
   
 }
 
@@ -313,6 +315,8 @@
   
   }
     .experience{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-weight: 600;
         color: #fff;
         text-shadow: 
         0 0 10px  #1F51FF,
@@ -379,7 +383,10 @@
   }
 
   .box .Skill-content{
-      padding: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+
       color: #fff;
   }
   .box .Skill-content ul li{
@@ -559,6 +566,42 @@
         0 0 40px rgb(174, 0, 255);
 }
 
+.email{
+    
+}
 
+.footer{
+    background-color:black;
+}
+.back-color{
+    text-shadow:  0 0 10px  #1F51FF,
+    0 0 20px #1F51FF,
+    0 0 40px #1F51FF,
+    0 0 70px #1F51FF,
+    0 0 110px #1F51FF,
+    0 0 160px #1F51FF;
+}
+.navbar-head{
+    font-family: 'Style Script', cursive;
+    color: white;
+    text-shadow:  0 0 10px  #1F51FF,
+    0 0 20px #1F51FF,
+    0 0 40px #1F51FF,
+    0 0 70px #1F51FF,
+    0 0 110px #1F51FF,
+    0 0 160px #1F51FF;
+}
 
+.nav-item a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gowun Dodum', sans-serif;
+    text-shadow:  0 0 10px  #1F51FF,
+    0 0 20px #1F51FF,
+    0 0 40px #1F51FF,
+    0 0 70px #1F51FF,
+    0 0 110px #1F51FF,
+    0 0 160px #1F51FF;
+}
 

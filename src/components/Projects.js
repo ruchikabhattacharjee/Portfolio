@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../assets/RuchikaBhattacharjeeResume.pdf';
 import "./components.css";
 
 function Projects(){
@@ -15,7 +16,7 @@ function Projects(){
                             <div className="projects-content">
                                 <h2>Chess Website</h2>
                                 <p>
-                                    <div className="pr">HTML | CSS | JavaScript</div>
+                                    <div className="pr">HTML | CSS | JavaScript | Bootstrap</div>
                                     <div className=" mt-3 mb-4" >
                                         Built a static website for AEC Chess Club using HTML,CSS and Javascript
                                     
@@ -73,6 +74,25 @@ function Projects(){
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="home text-center mt-5">
+            <a href="mailto:ruchikabhattacharjee1@gmail.com" className="email"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h2>EMAIL ME</h2>
+                      
+            </a>
+            <a href={Resume} target="_blank" rel="noreferrer noopener" className="email ms-5"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <h2>RESUME</h2>
+                      
+                    </a>
             </div>
         </div>
         )

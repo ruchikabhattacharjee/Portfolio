@@ -5,7 +5,7 @@ import "./components.css";
 function Experience(){
     return(
         <div >
-            <div className="container-fluid container-ex  pt-3 pb-5 px-lg-5">
+            <div className="container-fluid container-ex  pt-5 pb-5 px-lg-5">
             <h2 className="experience mb-3 text-center">EXPERIENCES</h2>
                 <div className="row container-ex row-cols-lg-3  row-cols-md-2 row-cols-1">
                     
